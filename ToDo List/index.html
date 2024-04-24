@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="build.css">
+    <title>ToDo App</title>
+</head>
+<body class="bg-[#FFFADA]">
+    <div class="text-center mt-5">
+        <h1 class="font-bold text-3xl mb-4">ToDo App</h1>
+        <input type="text" class="bg-gray-400 rounded-lg p-3 text-xl font-medium mb-4" id="js-search" placeholder="Search todo...">
+        <button class="bg-slate-400 px-2 py-1 rounded text-lg font-normal w-auto mt-4 hover:shadow-lg hover:shadow-black shadow shadow-black border-[4px] border-[#F3EAD3]" id="js-search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="bg-slate-400 px-2 py-1 rounded text-lg font-normal w-auto mt-4 hover:shadow-lg hover:shadow-black shadow shadow-black border-[4px] border-[#F3EAD3]" id="js-ok-btn">Ok</button>  
+        <div class="grid justify-items-center items-center grid-cols-3 mb-4">
+            <input type="text" class="bg-gray-400 rounded-lg
+            mr-2 p-3 text-xl font-medium hover:shadow-lg hover:shadow-black
+             shadow shadow-black border-[4px] border-[#F3EAD3]" id="js-name">
+            <input type="date" class="bg-gray-400 rounded p-3 text-xl font-medium w-[200px] 
+            hover:shadow-lg hover:shadow-black shadow shadow-black border-[4px] border-[#F3EAD3]" id="js-date">
+            <button class="bg-gray-400 rounded p-3 text-xl font-medium 
+            hover:shadow-lg hover:shadow-black shadow shadow-black border-[4px] border-[#F3EAD3]" id="enter" onclick="addTodo()">Add Task</button>
+        </div>
+        <div class="grid justify-items-center items-center grid-cols-3" id="js_todo">
+            <!-- <p class="bg-slate-400 px-2 py-1 rounded text-lg font-normal w-auto">Run For 5 Min</p>
+            <p class="bg-slate-400 px-2 py-1 rounded text-lg font-normal">01.01.2022</p>
+            <button class="bg-slate-400 px-2 rounded py-1 text-xl font-medium w-[110px]">Remove</button> -->
+        </div>
+        <div class="bg-red-600 text-2xl font-bold text-center h-auto mt-4
+         top-0 right-0 z-50  translate-x-full transition-all duration-500 ease-in-out" id="js-alert">
+        <p>Please Give All Information</p>
+        <button class="text-white bg-black m-2 p-2 rounded-lg hover:shadow-lg hover:shadow-white shadow shadow-white border-[4px] border-gray-600" id="js-ok" onclick="">OK</button>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
